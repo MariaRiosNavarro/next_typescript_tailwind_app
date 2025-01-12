@@ -1,0 +1,5 @@
+/* Example css modules imported in ProductCard -Use camelCase for class names - JS object- in css module*/
+.cardContainer{
+    padding: 1rem;
+    border: 1px solid #ccc;
+}

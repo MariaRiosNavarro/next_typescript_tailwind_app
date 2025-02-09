@@ -1,18 +1,12 @@
 import React from "react";
 import Link from "next/link";
+import { ThemeToggle } from "../ui/ThemeToggle";
 
 const Header = () => {
   return (
-    <header className="bg-primary">
-      {/* <h1>Header</h1>
-        <nav className='flex justify-between al'>
-            <Link href="/">Home</Link>
-            <Link href="/products">products</Link>
-            <Link href="/chris">chris</Link>
-        </nav> */}
-
-      <div className="navbar bg-primary gap-12">
-        <div className="width-[20%]">
+    <header className="w-full bg-primary">
+      <div className="navbar container mx-auto px-4">
+        <div className="flex-none">
           <div className="dropdown">
             <div
               tabIndex={0}
@@ -50,10 +44,18 @@ const Header = () => {
             </ul>
           </div>
         </div>
-        <div className="navbar-center width-[80%] justify-start">
-          <Link href={"/"} className="btn btn-ghost text-xl text-white">
+
+        <div className="flex-1 justify-center">
+          <Link
+            href={"/"}
+            className="btn btn-ghost text-xl text-white normal-case px-4"
+          >
             Next Typescript Tailwind Daisyui App
           </Link>
+        </div>
+
+        <div className="flex-none">
+          <ThemeToggle />
         </div>
       </div>
     </header>

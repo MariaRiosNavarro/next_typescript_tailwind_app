@@ -1,5 +1,4 @@
 /* Example css modules imported in ProductCard -Use camelCase for class names - JS object- in css module*/
-.cardContainer{
-    padding: 1rem;
-    border: 1px solid #ccc;
-}
+/* .cardContainer {
+  @apply p-5 my-5 bg-sky-400 text-white text-xl hover:bg-sky-600;
+} */
